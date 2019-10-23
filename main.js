@@ -35,11 +35,8 @@ remove.addEventListener('click', () => {
     let list = local.getItem('lista');
     list = list.split(',');
     let num = list.lastIndexOf(text);
-    console.log(list)
-    console.log(num);
     num1 = num+1
     list.splice(num, 1);
-    console.log(list)
     span.innerHTML = criaul(list);
     local.setItem('lista', list);
 });
